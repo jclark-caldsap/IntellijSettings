@@ -1,0 +1,5 @@
+<keymap version="1" name="Test" parent="$default">
+  <action id="ExternalSystem.ToggleAutoImport">
+    <mouse-shortcut keystroke="button142" />
+  </action>
+</keymap>

@@ -1,0 +1,146 @@
+<templateSet group="A-Collections">
+  <template name="il" value="ImmutableList" description="ImmutableList" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="im" value="ImmutableMap" description="ImmutableMap" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="imb" value="new ImmutableMap.Builder&lt;$KEY_TYPE$, $VALUE_TYPE$&gt;()&#10;    .$ADD_PUT_PUTALL$&#10;    .build()$END$" description="ImmutableMap.Builder" toReformat="false" toShortenFQNames="true">
+    <variable name="KEY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD_PUT_PUTALL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GSP" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="is" value="ImmutableSet" description="ImmutableSet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="isb" value="new ImmutableSet.Builder&lt;$TYPE$&gt;()&#10;$CALL_ADD_OR_ADDALL$&#10;    .build()" description="ImmutableSet.Builder" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALL_ADD_OR_ADDALL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GSP" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="mnh" value="Maps.newHashMap()" description="Maps.newHashMap()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="mnt" value="Maps.newTreeMap()" description="Maps.newTreeMap()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="msv" value="Map&lt;String, Value&gt;" description="Map&lt;String,Value&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="snh" value="Sets.newHashSet()" description="Sets.newHashSet()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="snt" value="Sets.newTreeSet()" description="Sets.newTreeSet()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="lna" value="Lists.newArrayList()" description="Lists.newArrayList()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="ilb" value="ImmutableList.Builder&lt;$Type$&gt; $Name$ = new ImmutableList.Builder&lt;&gt;();" description="ImmutableList.Builder dec/def" toReformat="false" toShortenFQNames="true">
+    <variable name="Type" expression="subtypes(&quot;java.lang.Object&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="Name" expression="" defaultValue="builder" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="iss" value="ImmutableSortedSet" description="ImmutableSortedSet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="imbd" value="ImmutableMap.Builder&lt;$KEY_TYPE$, $VALUE_TYPE$&gt; $BUILDER_NAME$ = new ImmutableMap.Builder&lt;$KEY_TYPE$, $VALUE_TYPE$&gt;();&#10;$BUILDER_NAME$.put();&#10;ImmutableMap&lt;$KEY_TYPE$, $VALUE_TYPE$&gt; $MAP_NAME$ = $BUILDER_NAME$.build();$END$" description="ImmutableMap.Builder" toReformat="false" toShortenFQNames="true">
+    <variable name="KEY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BUILDER_NAME" expression="" defaultValue="builder" alwaysStopAt="true" />
+    <variable name="MAP_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GSP" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="isbd" value="ImmutableSet.Builder&lt;$TYPE$&gt; $BUILDER_NAME$ = new ImmutableSet.Builder&lt;$TYPE$&gt;();&#10;$BUILDER_NAME$.add();&#10;ImmutableSet&lt;$TYPE$&gt; $SET_NAME$ = $BUILDER_NAME$.build();" description="ImmutableSet.Builder Declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BUILDER_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SET_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GSP" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="ilc" value="ImmutableList.copyOf($END$" description="ImmutableList.copyOf(" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="isc" value="ImmutableSet.copyOf(" description="ImmutableSet.copyOf(" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="imc" value="ImmutableMap.copyOf(" description="ImmutableMap.copyOf(" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+</templateSet>

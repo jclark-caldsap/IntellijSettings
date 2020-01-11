@@ -1,0 +1,48 @@
+<templateSet group="A-Temp">
+  <template name="rtft" value="recType=&quot;&lt;%= LabelConfigEI.VALUE_LABELCONFIGTYPE_FORM_TEXT %&gt;&quot; " description="recType=&quot;&lt;%=LabelConfigEI.VALUE_LABELCONFIGTYPE_FORM_TEXT %&gt;&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="rte" value="recType=&quot;&lt;%= LabelConfigEI.VALUE_LABELCONFIGTYPE_ENTITY %&gt;&quot; " description="recType=&quot;&lt;%=LabelConfigEI.VALUE_LABELCONFIGTYPE_ENTITY %&gt;&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="ruf" value="RequestUtils.getFormId(request)" description="RequestUtils.getFormId(request)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="rcf" value="RequestUtils.getFormId(requestContext)" description="RequestUtils.getFormId(requestContext)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="rufl" value="RequestUtils.getFormId(request), RequestUtils.getLangNo(request)" description="RequestUtils.getFormId(request), RequestUtils.getLangNo(request)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="pifl" value="panelInstance.getFormInfo().getFormId(), panelInstance.getLangNo()" description="panelInstance.getFormInfo().getFormId(), panelInstance.getLangNo()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="a" value="Escape.html(" description="temp" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="s" value="Escape.jsString(" description="temp" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

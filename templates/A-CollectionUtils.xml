@@ -1,0 +1,19 @@
+<templateSet group="A-CollectionUtils">
+  <template name="cuputifnotnull" value="CollectionUtils.putIfNotNull($MAP$, $KEY$, $VALUE$)$END$" description="CollectionUtils.putIfNotNull(" toReformat="false" toShortenFQNames="true">
+    <variable name="MAP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="cu" value="CollectionUtils.$END$" description="CollectionUtils." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+</templateSet>

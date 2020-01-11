@@ -1,0 +1,83 @@
+<templateSet group="A-JavaDoc">
+  <template name="code" value="{@code $NAME$}$END$" description="{@code }" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="li" value="&lt;li&gt;$END$&lt;/li&gt;" description="&lt;li&gt;&lt;/li&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="ul" value="&lt;ul&gt;$END$&lt;/ul&gt;" description="&lt;ul&gt;&lt;/ul&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="ol" value="&lt;ol&gt;&#10; $END$&#10;&lt;/ol&gt;" description="&lt;ol&gt;&lt;/ol&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="strong" value="&lt;strong&gt;$END$&lt;/strong&gt;" description="&lt;strong&gt;&lt;/strong&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="pre" value="&lt;pre&gt;&#10; $END$&#10;&lt;/pre&gt;" description="&lt;pre&gt;&lt;/pre&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="link" value="{@link $NAME$}$END$" description="{@link }" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

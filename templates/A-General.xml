@@ -1,0 +1,74 @@
+<templateSet group="A-General">
+  <template name="closer" value="Closer.close($OBJECT_TO_CLOSE$, $LOGGER$);$END$" description="Closer.close()" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT_TO_CLOSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOGGER" expression="variableOfType(&quot;com.acteksoft.common.util.logging.Logger&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="Closer.close($OBJECT_TO_CLOSE$, $LOGGER$);$END$" description="Closer.close()" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT_TO_CLOSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOGGER" expression="variableOfType(&quot;com.acteksoft.common.util.logging.Logger&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="cname" value="$CLASS_NAME$" description="Class Name" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="enum" value="public enum $NAME$ {&#10;  $A$,&#10;  $B$&#10;  }" description="Create enum" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="A" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="B" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mname" value="$METHOD_NAME$" description="Method Name" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="puclose" value="com.acteksoft.common.util.ProcessUtils.close($OBJECT_TO_CLOSE$, $LOGGER$);$END$" description="ProcessUtils.close()" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT_TO_CLOSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOGGER" expression="variableOfType(&quot;com.acteksoft.common.util.logging.Logger&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ter" value="($CONDITION$ ? $TRUE$ : $FALSE$) $END$" description="Ternary Operator" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FALSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="creload" value="private static class $ENTITY_NAME$CacheReloader implements CacheReloader {&#10;    private final @NotNull $CACHE_CLASS_NAME$ $CACHE_VAR_NAME$;&#10;&#10;    $ENTITY_NAME$CacheReloader(@NotNull $CACHE_CLASS_NAME$ $CACHE_VAR_NAME$) {&#10;      this.$CACHE_VAR_NAME$ = $CACHE_VAR_NAME$;&#10;    }&#10;&#10;    @Override&#10;    public void reloadCache(@NotNull Map&lt;String, Value&gt; fieldValues, @NotNull String entityName, @NotNull Connection con, boolean reloadCacheForWorkerServers, @NotNull Type opType, final @NotNull EntityInfoFactory eif, final @NotNull ConnectionProvider connectionProvider, final @NotNull Logger logger) {&#10;      $CACHE_VAR_NAME$.reload(fieldValues.get($ENTITY_NAME$EI.FIELD_$ENTITY_NAME_UPPER$NO), eif, connectionProvider, logger);&#10;    }&#10;&#10;    @Override&#10;    public void reloadCache(final @NotNull String entityName, final boolean reloadCacheForWorkerServers, final @NotNull Type opType, final @NotNull EntityInfoFactory eif, final @NotNull ConnectionProvider connectionProvider, final @NotNull Logger logger) {&#10;      $CACHE_VAR_NAME$.reload(eif, connectionProvider, logger);&#10;    }&#10;&#10;    @Override&#10;    public void reloadCaches(final boolean reloadOtherServers, final @NotNull EntityInfoFactory eif, final @NotNull ConnectionProvider connectionProvider, final @NotNull Logger logger) {&#10;      $CACHE_VAR_NAME$.reload(eif, connectionProvider, logger);&#10;    }&#10;&#10;    @Override&#10;    public void cleanup() {&#10;      $CACHE_VAR_NAME$.cleanup();&#10;    }&#10;  }&#10;cacheReloadersByEntityName.put($ENTITY_NAME$EI.ENTITY_NAME, new $ENTITY_NAME$CacheReloader($CACHE_VAR_NAME$));" description="CacheReloader Inner Class" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CACHE_CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CACHE_VAR_NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY_NAME_UPPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cmlname" value="&quot;$CLASS_NAME$&quot;, &quot;$METHOD_NAME$&quot;, $END$" description="Class And Method Name for Logging Statement" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

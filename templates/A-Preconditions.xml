@@ -1,0 +1,31 @@
+<templateSet group="A-Preconditions">
+  <template name="pcsm" value="Preconditions.checkState($EXP$, &quot;$MSG$&quot;);$END$" description="Preconditions.checkState with Msg" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pcs" value="Preconditions.checkState($EXP$);$END$" description="Preconditions.checkState" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pcsn" value="Preconditions.checkState($EXP$ != null);$END$" description="Preconditions.checkState Not Null" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pca" value="Preconditions.checkArgument($EXP$);$END$" description="Preconditions.checkArgument" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

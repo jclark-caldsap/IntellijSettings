@@ -1,0 +1,32 @@
+<templateSet group="A-getLangNo">
+  <template name="rul" value="RequestUtils.getLangNo(request)" description="RequestUtils.getLangNo(request)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="rulpc" value="RequestUtils.getLangNo((HttpServletRequest) pageContext.getRequest())" description="RequestUtils.getLangNo((HttpServletRequest) pageContext.getRequest())" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="adl" value="application.getDefaultLangNo()" description="application.getDefaultLangNo()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="ruul" value="RequestUtils.getUserContext(request).getUsrSet().getLangNo()" description="RequestUtils.getUserContext(request).getUsrSet().getLangNo()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="pil" value="panelInstance.getLangNo()" description="panelInstance.getLangNo()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+</templateSet>

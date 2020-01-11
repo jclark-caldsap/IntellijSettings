@@ -1,0 +1,42 @@
+<templateSet group="A-Exceptions">
+  <template name="tnia" value="throw new IllegalArgumentException(&quot;$MSG$&quot;);$END$" description="throw new IllegalArgumentException();" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tnre" value="throw new RuntimeException($LOGGER$);$END$" description="throw new RuntimeException(e);" toReformat="false" toShortenFQNames="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tnise" value="throw new IllegalStateException(&quot;$MSG$&quot;);$END$" description="throw new IllegalStateException();" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="iae" value="IllegalArgumentException$END$" description="IllegalArgumentException" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ise" value="IllegalStateException$END$" description="IllegalStateException" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tnuo" value="throw new UnsupportedOperationException(&quot;$MSG$&quot;);$END$" description="throw new UnsupportedOperationException();" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

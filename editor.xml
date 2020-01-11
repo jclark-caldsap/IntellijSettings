@@ -1,0 +1,42 @@
+<application>
+  <component name="CodeInsightSettings">
+    <EXCLUDED_PACKAGE NAME="com.sap.db.jdbcext.wrapper.Connection" />
+    <EXCLUDED_PACKAGE NAME="com.sun.corba.se.pept.transport.Connection" />
+    <EXCLUDED_PACKAGE NAME="com.sun.corba.se.spi.legacy.connection.Connection" />
+    <EXCLUDED_PACKAGE NAME="com.sun.glass.ui.Application" />
+    <EXCLUDED_PACKAGE NAME="com.sun.istack.NotNull" />
+    <EXCLUDED_PACKAGE NAME="com.sun.istack.Nullable" />
+    <EXCLUDED_PACKAGE NAME="com.sun.istack.internal.NotNull" />
+    <EXCLUDED_PACKAGE NAME="com.sun.istack.internal.Nullable" />
+    <EXCLUDED_PACKAGE NAME="com.sun.jndi.ldap.Connection" />
+    <EXCLUDED_PACKAGE NAME="com.sun.research.ws.wadl.Application" />
+    <EXCLUDED_PACKAGE NAME="javafx.application.Application" />
+    <EXCLUDED_PACKAGE NAME="javax.annotation.Nullable" />
+    <EXCLUDED_PACKAGE NAME="javax.jms.Connection" />
+    <EXCLUDED_PACKAGE NAME="javax.ws.rs.core.Application" />
+    <EXCLUDED_PACKAGE NAME="net.sf.ehcache.CacheManager" />
+    <EXCLUDED_PACKAGE NAME="net.sf.ehcache.management.CacheManager" />
+    <EXCLUDED_PACKAGE NAME="org.apache.poi.sl.usermodel.ObjectMetaData.Application" />
+    <EXCLUDED_PACKAGE NAME="org.springframework.cache.CacheManager" />
+    <EXCLUDED_PACKAGE NAME="sun.rmi.transport.Connection" />
+  </component>
+  <component name="DaemonCodeAnalyzerSettings" profile="Actek" />
+  <component name="EditorSettings">
+    <option name="SOFT_WRAP_FILE_MASKS" value="*.md; *.txt; *.rst; *.adoc" />
+    <option name="SHOW_INTENTION_BULB" value="false" />
+    <option name="IS_INDENT_GUIDES_SHOWN" value="false" />
+    <option name="IS_WHEEL_FONTCHANGE_ENABLED" value="true" />
+  </component>
+  <component name="TodoConfiguration">
+    <pattern pattern="\btodo\b.*" />
+    <pattern pattern="\bfixme\b.*" />
+    <pattern pattern="\btodo jclark\b.*" />
+    <pattern pattern="\btodo jclark-a-\b.*" />
+    <filter name="Mine">
+      <pattern index="2" />
+    </filter>
+    <filter name="Mine A">
+      <pattern index="3" />
+    </filter>
+  </component>
+</application>

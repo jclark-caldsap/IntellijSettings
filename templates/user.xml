@@ -1,0 +1,132 @@
+<templateSet group="user">
+  <template name="ec" value="EntityCollection $EC_VAR$ = new EntityCollection(&quot;$ENTITY_VAR$&quot;);&#10;$END$" description="Create new EntityCollection" toReformat="true" toShortenFQNames="true">
+    <variable name="EC_VAR" expression="" defaultValue="&quot;ec&quot;" alwaysStopAt="true" />
+    <variable name="ENTITY_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="ent" value="$EntityName$EI.ENTITY_NAME" description="Insert entity name using the EI.ENTITY_NAME constant." toReformat="true" toShortenFQNames="true">
+    <variable name="EntityName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="fora" value="for (int $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) &#10;  {&#10;  $TYPE$ $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;  }" description="Array Iteration" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="ARRAY" expression="arrayVariable()" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="componentTypeOf(arrayVariable())" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iter" value="for (Iterator iter = $COLLECTION$.iterator(); iter.hasNext(); ) &#10;  {&#10;  $TYPE$ $VAR$ = ($TYPE$) iter.next();&#10;  $END$&#10;  }" description="Iterator" toReformat="false" toShortenFQNames="true">
+    <variable name="COLLECTION" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="qp" value="QueryParm queryParm = new QueryParm($EI_CLASS$.ENTITY_NAME);" description="Construct QueryParm" toReformat="true" toShortenFQNames="true">
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="qpc" value="$QUERY_PARM_VAR$.addConstraint(new Constraint(new FieldKey($EI_CLASS$.ENTITY_NAME, $EI_CLASS$.FIELD_$FIELD_NAME$), $OTHER_PARMS$));" description="QueryParm addConstraint" toReformat="true" toShortenFQNames="true">
+    <variable name="QUERY_PARM_VAR" expression="variableOfType(&quot;com.acteksoft.common.shared.QueryParm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OTHER_PARMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="qpo" value="$QUERY_PARM_VAR$.addOrderByField(new FieldKey($EI_CLASS$.ENTITY_NAME, $EI_CLASS$.FIELD_$FIELD_NAME$), $DESC$);" description="QueryParm addOrderByField" toReformat="true" toShortenFQNames="true">
+    <variable name="QUERY_PARM_VAR" expression="variableOfType(&quot;com.acteksoft.common.shared.QueryParm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESC" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="qps" value="$QUERY_PARM_VAR$.addSelectField(new FieldKey($EI_CLASS$.ENTITY_NAME, $EI_CLASS$.FIELD_$FIELD_NAME$));" description="QueryParm addSelectField" toReformat="true" toShortenFQNames="true">
+    <variable name="QUERY_PARM_VAR" expression="variableOfType(&quot;com.acteksoft.common.shared.QueryParm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sqp" value="SummaryQueryParm queryParm = new SummaryQueryParm($EI_CLASS$.ENTITY_NAME);" description="Construct SummaryQueryParm" toReformat="true" toShortenFQNames="true">
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sqpc" value="$QUERY_PARM_VAR$.addConstraint(new Constraint(new FieldKey($EI_CLASS$.ENTITY_NAME, $EI_CLASS$.FIELD_$FIELD_NAME$), $OTHER_PARMS$));" description="SummaryQueryParm addConstraint" toReformat="true" toShortenFQNames="true">
+    <variable name="QUERY_PARM_VAR" expression="variableOfType(&quot;com.acteksoft.common.shared.SummaryQueryParm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OTHER_PARMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sqps" value="$QUERY_PARM_VAR$.addGroupByField(new FieldKey($EI_CLASS$.ENTITY_NAME, $EI_CLASS$.FIELD_$FIELD_NAME$));" description="SummaryQueryParm addGroupByField" toReformat="true" toShortenFQNames="true">
+    <variable name="QUERY_PARM_VAR" expression="variableOfType(&quot;com.acteksoft.common.shared.SummaryQueryParm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sqpsum" value="$QUERY_PARM_VAR$.addSumField(new FieldKey($EI_CLASS$.ENTITY_NAME, $EI_CLASS$.FIELD_$FIELD_NAME$), &quot;$ALIAS$&quot;);" description="SummaryQueryParm addSumField" toReformat="true" toShortenFQNames="true">
+    <variable name="QUERY_PARM_VAR" expression="variableOfType(&quot;com.acteksoft.common.shared.SummaryQueryParm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EI_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+</templateSet>

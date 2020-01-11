@@ -1,0 +1,34 @@
+<templateSet group="A-StringUtils">
+  <template name="su" value="StringUtils" description="StringUtils" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="sue" value="StringUtils.equals($P1$, $P2$)" description="StringUtils.equals()" toReformat="false" toShortenFQNames="true">
+    <variable name="P1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="P2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="sfnew" value="String.format(&quot;$MSG_VAR$&quot;, $MSG_OBJECT$ " description="String.format %s" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG_OBJECT" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="sf" value="String.format( " description="String.format(" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+</templateSet>
